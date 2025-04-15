@@ -282,62 +282,34 @@ section{
 
 /* About Me Section */
 
-#about{
-    position: relative;
-}
-
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.about-details-container{
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,.about-details-containers{
+.section-container {
     display: flex;
-}
-
-.about-pic{
-    border: 1px solid;
-    color: #d87093;
-}
-
-
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
-
-.details-container{
-    padding: 2rem;
-    flex: 1;
-    background: #d87093;
-    border-radius: 2rem;
-    border: white 0.1rem solid;
-    border-color: mediumvioletred;
-    text-align: center;
-}
-
-.details-container h3{
-    color: rgb(42, 42, 42);
-}
-
-.details-container p{
-    color: white;
-}
-
-.section-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
-    height: 80%;
+    padding: 2rem;
+    flex-wrap: wrap; /* still great for smaller screens */
 }
 
-.section__pic-container{
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+.section__pic-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* push image to the left */
+    align-items: center;
+}
+
+.about-pic {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 3px solid #d87093;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; /* makes the text look natural */
+    line-height: 1.6;
 }
